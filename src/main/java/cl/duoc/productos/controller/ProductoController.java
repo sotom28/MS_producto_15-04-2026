@@ -22,12 +22,13 @@ public class ProductoController {
     @Autowired
     private ProductoService productoService;
     
-    
+
     @GetMapping
     public List<Producto> obtenerProductos() {
         return productoService.obtenerProductos();
     }
 
+    
     @PostMapping
     public void crearProducto(@RequestBody Producto producto) {
         productoService.crearProducto(producto);
