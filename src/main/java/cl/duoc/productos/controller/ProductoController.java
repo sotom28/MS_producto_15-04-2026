@@ -22,6 +22,7 @@ public class ProductoController {
     @Autowired
     private ProductoService productoService;
     
+    
     @GetMapping
     public List<Producto> obtenerProductos() {
         return productoService.obtenerProductos();
